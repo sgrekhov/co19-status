@@ -11,7 +11,7 @@ LayoutTests/fast/forms/checkValidity-001_t01: fail
 Language/12_Expressions/01_Constants_A17_t03: fail
 
 # TBF: when we override "foo([x = 0]) {}" with "foo([x]) {}" we should report warning - different default value
-Language/Classes/override_different_default_values_t02: MissingStaticWarning
+Language/Classes/Instance_Methods/override_different_default_values_t02: MissingStaticWarning
 Language/07_Classes/4_Abstract_Instance_Members_A07_t04: MissingStaticWarning
 
 # TBF: Static members should not be accessible via subclasses.

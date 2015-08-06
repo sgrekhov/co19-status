@@ -27,7 +27,7 @@ Language/Classes/same_name_type_variable_t05: Fail # Missing CT error on member 
 Language/Classes/same_name_type_variable_t06: Fail # Missing CT error on member with same name a type parameter
 Language/Classes/same_name_type_variable_t08: Fail # Missing CT error on member with same name a type parameter
 Language/Classes/same_name_type_variable_t09: Fail # Missing CT error on member with same name a type parameter
-Language/07_Classes/1_Instance_Methods_A07_t01: fail # Issue 21201
+Language/Classes/Instance_Methods/same_name_setter_t01: fail # Issue 21201
 Language/07_Classes/3_Setters_A04_t01: Fail # inherited from VM
 Language/07_Classes/3_Setters_A04_t02: Fail # inherited from VM
 Language/07_Classes/3_Setters_A04_t07: Fail # inherited from VM
