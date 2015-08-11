@@ -32,12 +32,12 @@ Language/Classes/Setters/name_t01: Fail # inherited from VM
 Language/Classes/Setters/name_t02: Fail # inherited from VM
 Language/Classes/Setters/name_t07: Fail # inherited from VM
 Language/Classes/Constructors/Generative_Constructors/execution_of_an_initializer_t02: fail # 13363
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A20_t02: fail # 13363
-Language/07_Classes/6_Constructors/2_Factories_A08_t02: fail # Issue 21202
-Language/07_Classes/6_Constructors/2_Factories_A10_t02: fail # Issue 21202
-Language/07_Classes/6_Constructors/2_Factories_A10_t03: fail # Issue 21202
-Language/07_Classes/6_Constructors_A03_t03: Fail # Calling unresolved class constructor.
-Language/07_Classes/9_Superclasses/1_Inheritance_and_Overriding_A01_t03: Fail # TODO(dart2dart-team): Please triage this failure.
+Language/Classes/Constructors/Generative_Constructors/initializing_formals_execution_t02: fail # 13363
+Language/Classes/Constructors/Factories/redirecting_constructor_call_t02: fail # Issue 21202
+Language/Classes/Constructors/Factories/accessible_class_t02: fail # Issue 21202
+Language/Classes/Constructors/Factories/accessible_class_t03: fail # Issue 21202
+Language/Classes/Constructors/implicit_constructor_t03: Fail # Calling unresolved class constructor.
+Language/Classes/Superclasses/Inheritance_and_Overriding/inheritance_t03: Fail # TODO(dart2dart-team): Please triage this failure.
 Language/10_Generics/09_Generics_A01_t17: fail # Issue 21203
 Language/12_Expressions/01_Constants_A03_t01: Fail # Issue 13652
 Language/12_Expressions/12_Instance_Creation/1_New_A02_t03: fail # co19-roll r546: Please triage this failure

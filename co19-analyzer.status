@@ -15,7 +15,7 @@ Language/Classes/Instance_Methods/override_different_default_values_t02: Missing
 Language/Classes/Abstract_Instance_Members/override_default_value_t04: MissingStaticWarning
 
 # TBF: Static members should not be accessible via subclasses.
-Language/07_Classes/9_Superclasses/1_Inheritance_and_Overriding_A01_t05: MissingStaticWarning
+Language/Classes/Superclasses/Inheritance_and_Overriding/inheritance_t05: MissingStaticWarning
 
 # co19 issue #442, undefined name "Expect"
 Language/Types/Interface_Types/subtype_t12: fail, OK
@@ -87,7 +87,7 @@ Language/Variables/final_or_static_initialization_t03: MissingCompileTimeError #
 Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t17: MissingCompileTimeError # co19-roll r651: Please triage this failure
 Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t18: MissingCompileTimeError # co19-roll r651: Please triage this failure
 
-Language/07_Classes/10_Superinterfaces_A07_t05: StaticWarning # co19-roll r667: Please triage this failure
+Language/Classes/Superinterfaces/no_member_A07_t05: StaticWarning # co19-roll r667: Please triage this failure
 LibTest/convert/JsonEncoder/JsonEncoder_A01_t01: StaticWarning # co19-roll r667: Please triage this failure
 
 # co19 issue 656
