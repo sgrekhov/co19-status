@@ -18,7 +18,7 @@ Language/Classes/Abstract_Instance_Members/override_default_value_t04: MissingSt
 Language/07_Classes/9_Superclasses/1_Inheritance_and_Overriding_A01_t05: MissingStaticWarning
 
 # co19 issue #442, undefined name "Expect"
-Language/15_Types/4_Interface_Types_A08_t03: fail, OK
+Language/Types/Interface_Types/subtype_t12: fail, OK
 
 # co19 issue #438, Static variables are initialized lazily, need not be constants
 Language/12_Expressions/01_Constants_A16_t01: fail, OK

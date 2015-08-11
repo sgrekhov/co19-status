@@ -84,4 +84,4 @@ LayoutTests/fast/*: SkipByDesign # DOM not supported on VM.
 WebPlatformTest/*: SkipByDesign # dart:html not supported on VM.
 
 [ $runtime == vm && $mode == debug && $builder_tag == asan ]
-Language/15_Types/4_Interface_Types_A11_t01: Skip  # Issue 21174.
+Language/Types/Interface_Types/subtype_t27: Skip  # Issue 21174.
