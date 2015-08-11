@@ -28,10 +28,10 @@ Language/Classes/same_name_type_variable_t06: Fail # Missing CT error on member 
 Language/Classes/same_name_type_variable_t08: Fail # Missing CT error on member with same name a type parameter
 Language/Classes/same_name_type_variable_t09: Fail # Missing CT error on member with same name a type parameter
 Language/Classes/Instance_Methods/same_name_setter_t01: fail # Issue 21201
-Language/07_Classes/3_Setters_A04_t01: Fail # inherited from VM
-Language/07_Classes/3_Setters_A04_t02: Fail # inherited from VM
-Language/07_Classes/3_Setters_A04_t07: Fail # inherited from VM
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A12_t02: fail # 13363
+Language/Classes/Setters/name_t01: Fail # inherited from VM
+Language/Classes/Setters/name_t02: Fail # inherited from VM
+Language/Classes/Setters/name_t07: Fail # inherited from VM
+Language/Classes/Constructors/Generative_Constructors/execution_of_an_initializer_t02: fail # 13363
 Language/07_Classes/6_Constructors/1_Generative_Constructors_A20_t02: fail # 13363
 Language/07_Classes/6_Constructors/2_Factories_A08_t02: fail # Issue 21202
 Language/07_Classes/6_Constructors/2_Factories_A10_t02: fail # Issue 21202
