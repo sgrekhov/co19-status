@@ -38,7 +38,7 @@ Language/Classes/Constructors/Factories/accessible_class_t02: fail # Issue 21202
 Language/Classes/Constructors/Factories/accessible_class_t03: fail # Issue 21202
 Language/Classes/Constructors/implicit_constructor_t03: Fail # Calling unresolved class constructor.
 Language/Classes/Superclasses/Inheritance_and_Overriding/inheritance_t03: Fail # TODO(dart2dart-team): Please triage this failure.
-Language/10_Generics/09_Generics_A01_t17: fail # Issue 21203
+Language/Generics/syntax_t17: fail # Issue 21203
 Language/12_Expressions/01_Constants_A03_t01: Fail # Issue 13652
 Language/12_Expressions/12_Instance_Creation/1_New_A02_t03: fail # co19-roll r546: Please triage this failure
 Language/12_Expressions/12_Instance_Creation/1_New_A02_t05: fail # co19-roll r546: Please triage this failure
