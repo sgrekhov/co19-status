@@ -17,18 +17,18 @@ Language/Classes/same_name_type_variable_t06: Fail # Missing CT error on member 
 Language/Classes/same_name_type_variable_t08: Fail # Missing CT error on member with same name a type parameter
 Language/Classes/same_name_type_variable_t09: Fail # Missing CT error on member with same name a type parameter
 Language/Classes/Instance_Methods/same_name_setter_t01: fail # Issue 21201
-Language/07_Classes/3_Setters_A04_t01: CompileTimeError # Issue 5023
-Language/07_Classes/3_Setters_A04_t02: CompileTimeError # Issue 5023
-Language/07_Classes/3_Setters_A04_t03: RuntimeError # Issue 5023
-Language/07_Classes/3_Setters_A04_t07: CompileTimeError # Issue 5023
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A12_t02: fail # Issue 13363
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A13_t01: RuntimeError # compiler cancelled: cannot resolve type T
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A13_t01: RuntimeError, OK # co19 issue 258
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A20_t02: fail # Issue 13363
-Language/07_Classes/6_Constructors/2_Factories_A08_t02: fail # Issue 21202
-Language/07_Classes/6_Constructors/2_Factories_A10_t02: fail # Issue 21202
-Language/07_Classes/6_Constructors/2_Factories_A10_t03: fail # Issue 21202
-Language/10_Generics/09_Generics_A01_t17: fail # Issue 21203
+Language/Classes/Setters/name_t01: CompileTimeError # Issue 5023
+Language/Classes/Setters/name_t02: CompileTimeError # Issue 5023
+Language/Classes/Setters/name_t03: RuntimeError # Issue 5023
+Language/Classes/Setters/name_t07: CompileTimeError # Issue 5023
+Language/Classes/Constructors/Generative_Constructors/execution_of_an_initializer_t02: fail # Issue 13363
+Language/Classes/Constructors/Generative_Constructors/execution_of_a_superinitializer_t01: RuntimeError # compiler cancelled: cannot resolve type T
+Language/Classes/Constructors/Generative_Constructors/execution_of_a_superinitializer_t01: RuntimeError, OK # co19 issue 258
+Language/Classes/Constructors/Generative_Constructors/initializing_formals_execution_t02: fail # Issue 13363
+Language/Classes/Constructors/Factories/redirecting_constructor_call_t02: fail # Issue 21202
+Language/Classes/Constructors/Factories/accessible_class_t02: fail # Issue 21202
+Language/Classes/Constructors/Factories/accessible_class_t03: fail # Issue 21202
+Language/Generics/syntax_t17: fail # Issue 21203
 Language/12_Expressions/00_Object_Identity/1_Object_Identity_A02_t02: fail # Issue 11551, also related to issue 563, 18738
 Language/12_Expressions/00_Object_Identity/1_Object_Identity_A06_t01: fail # Issue 11551, also related to issue 563, 18738
 Language/12_Expressions/01_Constants_A03_t01: CompileTimeError # Issue 13652

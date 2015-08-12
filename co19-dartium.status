@@ -62,7 +62,7 @@ LayoutTests/fast/forms/textarea-submit-crash_t01: Skip # Test reloads itself. Is
 
 LayoutTests/fast/mediastream/getusermedia_t01: Skip # co19 issue 738
 
-Language/07_Classes/6_Constructors/1_Generative_Constructors_A09_t01: Pass, Fail #: Please triage this failure.
+Language/Classes/Constructors/Generative_Constructors/final_variables_t01: Pass, Fail #: Please triage this failure.
 Language/14_Libraries_and_Scripts/3_Parts_A02_t02: Skip # Please triage this failure.
 Language/14_Libraries_and_Scripts/4_Scripts_A03_t03: Pass # Issue 14478: This should break.
 LibTest/async/Completer/completeError_A02_t01: Pass, Fail # Please triage this failure.
