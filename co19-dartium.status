@@ -16,8 +16,8 @@ LayoutTests/fast/canvas/webgl/tex-image-and-sub-image-2d-with-video-rgba4444_t01
 LayoutTests/fast/canvas/webgl/tex-image-and-sub-image-2d-with-video-rgb565_t01: Skip # Issue 20540
 LayoutTests/fast/canvas/webgl/tex-image-and-sub-image-2d-with-video-rgba5551_t01: Skip # Issue 20540
 LayoutTests/fast/canvas/webgl/tex-image-and-sub-image-2d-with-video_t01: Skip # Issue 20540
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t01: Fail # Issue 22007
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t03: Fail # Issue 22007
+Language/Expressions/Instance_Creation/Const/abstract_class_t01: Fail # Issue 22007
+Language/Expressions/Instance_Creation/Const/abstract_class_t03: Fail # Issue 22007
 Language/14_Libraries_and_Scripts/3_Parts_A01_t05: Skip # Times out flakily. Issue 20881
 LayoutTests/fast/speechsynthesis/*: Skip # Times out on Dartium. Fails elsewhere. Issue 22017
 LayoutTests/fast/mediastream/RTCPeerConnection-AddRemoveStream_t01: Skip # Issue 22111

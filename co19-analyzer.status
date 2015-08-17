@@ -8,7 +8,7 @@ WebPlatformTest/html/semantics/forms/the-textarea-element/textarea-type_t01: fai
 LayoutTests/fast/forms/checkValidity-001_t01: fail
 
 # TBF: infinite look: class A {const A();final m = const A();}
-Language/12_Expressions/01_Constants_A17_t03: fail
+Language/Expressions/Constants/depending_on_itself_t03: fail
 
 # TBF: when we override "foo([x = 0]) {}" with "foo([x]) {}" we should report warning - different default value
 Language/Classes/Instance_Methods/override_different_default_values_t02: MissingStaticWarning
@@ -21,11 +21,11 @@ Language/Classes/Superclasses/Inheritance_and_Overriding/inheritance_t05: Missin
 Language/Types/Interface_Types/subtype_t12: fail, OK
 
 # co19 issue #438, Static variables are initialized lazily, need not be constants
-Language/12_Expressions/01_Constants_A16_t01: fail, OK
-Language/12_Expressions/01_Constants_A16_t02: fail, OK
+Language/Expressions/Constants/exception_t01: fail, OK
+Language/Expressions/Constants/exception_t02: fail, OK
 
 # co19 issue #543: invocation of a non-function
-Language/12_Expressions/14_Function_Invocation/4_Function_Expression_Invocation_A03_t02: fail, OK
+Language/Expressions/Function_Invocation/Function_Expression_Invocation/static_type_t02: fail, OK
 
 # co19 issue #564: URI can be any number adjacent string literals
 Language/14_Libraries_and_Scripts/5_URIs_A01_t24: fail, OK
@@ -84,8 +84,8 @@ Language/Variables/final_t07: MissingCompileTimeError # co19-roll r651: Please t
 Language/Variables/final_or_static_initialization_t01: MissingCompileTimeError # co19-roll r651: Please triage this failure
 Language/Variables/final_or_static_initialization_t02: MissingCompileTimeError # co19-roll r651: Please triage this failure
 Language/Variables/final_or_static_initialization_t03: MissingCompileTimeError # co19-roll r651: Please triage this failure
-Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t17: MissingCompileTimeError # co19-roll r651: Please triage this failure
-Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t18: MissingCompileTimeError # co19-roll r651: Please triage this failure
+Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: MissingCompileTimeError # co19-roll r651: Please triage this failure
+Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # co19-roll r651: Please triage this failure
 
 Language/Classes/Superinterfaces/no_member_A07_t05: StaticWarning # co19-roll r667: Please triage this failure
 LibTest/convert/JsonEncoder/JsonEncoder_A01_t01: StaticWarning # co19-roll r667: Please triage this failure
@@ -290,5 +290,5 @@ LayoutTests/fast/shapes/shape-outside-floats/shape-outside-rounded-boxes_t01: St
 LayoutTests/fast/xpath/4XPath/Core/test_core_functions_t01: StaticWarning # co19 issue 703
 WebPlatformTest/dom/Node-replaceChild_t01: CompileTimeError # co19-roll r761: Please triage this failure.
 WebPlatformTest/html/semantics/forms/the-input-element/email_t02: StaticWarning # co19 issue 701
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t01: MissingCompileTimeError # Issue 22010
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t03: MissingCompileTimeError # Issue 22010
+Language/Expressions/Instance_Creation/Const/abstract_class_t01: MissingCompileTimeError # Issue 22010
+Language/Expressions/Instance_Creation/Const/abstract_class_t03: MissingCompileTimeError # Issue 22010
