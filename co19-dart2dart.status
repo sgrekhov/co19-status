@@ -3,13 +3,13 @@ invocation# Copyright (c) 2013, the Dart project authors.  Please see the AUTHOR
 # BSD-style license that can be found in the LICENSE file.
 
 [ $compiler == dart2dart && $builder_tag == new_backend ]
-Language/12_Expressions/18_Assignment_A04_t09: RuntimeError # Issue 23015
+Language/Expressions/Assignment/setter_assignment_t09: RuntimeError # Issue 23015
 LibTest/collection/ListBase/ListBase_class_A01_t02: Crash # issue 19953
 LibTest/collection/ListMixin/ListMixin_class_A01_t02: Crash # issue 19953
 LibTest/core/List/List_class_A01_t02: Crash # issue 19953
 
 [ $compiler == dart2dart && $builder_tag != new_backend ]
-Language/12_Expressions/18_Assignment_A04_t09: RuntimeError # co19-roll r667: Please triage this failure
+Language/Expressions/Assignment/setter_assignment_t09: RuntimeError # co19-roll r667: Please triage this failure
 Language/13_Statements/12_Labels_A01_t03: fail # co19-roll r546: Please triage this failure
 
 [ $compiler == dart2dart ]
@@ -57,7 +57,7 @@ Language/Expressions/Instance_Creation/Const/abstract_class_t03: MissingCompileT
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: MissingCompileTimeError # Issue 21210
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # Issue 21210
 Language/12_Expressions/15_Method_Invocation/3_Static_Invocation_A04_t09: RuntimeError # co19-roll r623: Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
 Language/12_Expressions/22_Equality_A01_t01: fail # co19-roll r546: Please triage this failure
 Language/12_Expressions/22_Equality_A05_t01: fail # co19-roll r546: Please triage this failure
 Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # co19-roll r546: Please triage this failure
@@ -122,7 +122,7 @@ LibTest/math/atan_A01_t01: Fail, OK # co19 issue 44
 
 [ $compiler == dart2dart && $minified ]
 Language/Expressions/Function_Invocation/Function_Expression_Invocation/property_extraction_t02: fail # co19-roll r559: Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A02_t01: fail # co19-roll r559: Please triage this failure
-Language/12_Expressions/18_Assignment_A05_t02: fail # co19-roll r559: Please triage this failure
-Language/12_Expressions/18_Assignment_A05_t04: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A02_t01: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Assignment/expression_assignment_t02: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Assignment/expression_assignment_t04: fail # co19-roll r559: Please triage this failure
 LibTest/convert/JsonCodec/encode_A01_t02: RuntimeError # co19-roll r641: Please triage this failure
