@@ -44,8 +44,8 @@ Language/Expressions/Instance_Creation/Const/abstract_class_t01: fail # Issue 21
 Language/Expressions/Instance_Creation/Const/abstract_class_t03: fail # Issue 21134 and co19 issue 714
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: MissingCompileTimeError # Issue 21210
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # Issue 21210
-Language/12_Expressions/22_Equality_A01_t01: fail # Issue 21137
-Language/12_Expressions/22_Equality_A05_t01: fail # Issue 21137
+Language/Expressions/Equality/syntax_t01: fail # Issue 21137
+Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # Issue 21137
 Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # Issue 21154
 Language/13_Statements/04_Local_Function_Declaration_A04_t01: MissingCompileTimeError # Issue 21050
 Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # Issue 21050
@@ -1395,7 +1395,7 @@ LayoutTests/fast/text/text-combine-shrink-to-fit_t01: RuntimeError # Please tria
 [ $compiler == dart2js && $runtime == ff ]
 Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
 Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/28_Postfix_Expressions_A07_t02: Skip # Times out. Please triage this failure
+Language/Expressions/Postfix_Expressions/property_decrement_t02: Skip # Times out. Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-self_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-justify-self_t01: RuntimeError # Please triage this failure
@@ -7559,7 +7559,7 @@ Language/Variables/implicit_setter_void_t07: Skip # Times out. Please triage thi
 Language/Functions/Formal_Parameters/scope_t01: Skip # Times out. Please triage this failure
 Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
 Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/19_Conditional_A06_t04: Skip # Times out. Please triage this failure
+Language/Expressions/Conditional/type_t04: Skip # Times out. Please triage this failure
 Language/12_Expressions/30_Identifier_Reference_A10_t02: Skip # Times out. Please triage this failure
 Language/13_Statements/03_Variable_Declaration_A01_t18: Skip # Times out. Please triage this failure
 Language/Types/Interface_Types/subtype_t37: Skip # Times out. Please triage this failure
