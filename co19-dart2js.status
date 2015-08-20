@@ -58,8 +58,8 @@ Language/14_Libraries_and_Scripts/1_Imports_A03_t30: fail # co19 issue 723
 Language/Types/Interface_Types/subtype_t27: crash # Issue 21174
 Language/Types/Interface_Types/subtype_t28: crash # Issue 21174
 Language/Types/Interface_Types/subtype_t30: fail # Issue 14654
-Language/16_Reference/1_Lexical_Rules/1_Reserved_Words_A40_t04: MissingCompileTimeError # Checks that other Unicode whitespaces are not allowed:  check NO-BREAK SPACE (U+00A0)
-Language/16_Reference/1_Lexical_Rules_A02_t06: MissingCompileTimeError # Checks that Unicode whitespaces other than WHITESPACE are not permitted in the source code. Checks symbol U+00a0.
+Language/Reference/Lexical_Rules/Reserved_Words/whitespace_t04: MissingCompileTimeError # Checks that other Unicode whitespaces are not allowed:  check NO-BREAK SPACE (U+00A0)
+Language/Reference/Lexical_Rules/whitespace_t06: MissingCompileTimeError # Checks that Unicode whitespaces other than WHITESPACE are not permitted in the source code. Checks symbol U+00a0.
 LibTest/async/Stream/handleError_A04_t01: RuntimeError # co19-roll r641: Please triage this failure
 LibTest/async/Stream/listen_A05_t01: RuntimeError # co19 issue 736. Issue 15171
 LibTest/collection/LinkedList/add_A01_t01: Pass, Slow # Slow tests that needs extra time to finish.
