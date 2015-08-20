@@ -46,7 +46,7 @@ Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: 
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # Issue 21210
 Language/Expressions/Equality/syntax_t01: fail # Issue 21137
 Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # Issue 21137
-Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # Issue 21154
+Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # Issue 21154
 Language/13_Statements/04_Local_Function_Declaration_A04_t01: MissingCompileTimeError # Issue 21050
 Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # Issue 21050
 Language/14_Libraries_and_Scripts/1_Imports_A03_t08: fail # Issue 21171
@@ -7560,7 +7560,7 @@ Language/Functions/Formal_Parameters/scope_t01: Skip # Times out. Please triage 
 Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
 Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
 Language/Expressions/Conditional/type_t04: Skip # Times out. Please triage this failure
-Language/12_Expressions/30_Identifier_Reference_A10_t02: Skip # Times out. Please triage this failure
+Language/Expressions/Identifier_Reference/evaluation_function_t02: Skip # Times out. Please triage this failure
 Language/13_Statements/03_Variable_Declaration_A01_t18: Skip # Times out. Please triage this failure
 Language/Types/Interface_Types/subtype_t37: Skip # Times out. Please triage this failure
 Language/Types/Function_Types/subtype_no_args_t03: Skip # Times out. Please triage this failure

@@ -60,7 +60,7 @@ Language/12_Expressions/15_Method_Invocation/3_Static_Invocation_A04_t09: Runtim
 Language/Expressions/Top_level_Getter_Invocation/Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
 Language/Expressions/Equality/syntax_t01: fail # co19-roll r546: Please triage this failure
 Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # co19-roll r546: Please triage this failure
 Language/13_Statements/04_Local_Function_Declaration_A04_t01: Fail, MissingCompileTimeError # co19-roll r607: Please triage this failure
 Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # co19-roll r667: Please triage this failure
 Language/13_Statements/09_Switch_A01_t02: fail # co19-roll r546: Please triage this failure
