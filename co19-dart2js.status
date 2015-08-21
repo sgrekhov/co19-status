@@ -47,8 +47,8 @@ Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: 
 Language/Expressions/Equality/syntax_t01: fail # Issue 21137
 Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # Issue 21137
 Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # Issue 21154
-Language/13_Statements/04_Local_Function_Declaration_A04_t01: MissingCompileTimeError # Issue 21050
-Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # Issue 21050
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t01: MissingCompileTimeError # Issue 21050
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t03: MissingCompileTimeError # Issue 21050
 Language/14_Libraries_and_Scripts/1_Imports_A03_t08: fail # Issue 21171
 Language/14_Libraries_and_Scripts/1_Imports_A03_t09: fail # Issue 21171
 Language/14_Libraries_and_Scripts/1_Imports_A03_t10: fail # Issue 21171
@@ -252,8 +252,8 @@ WebPlatformTest/dom/nodes/Document-createElement_t01: CompileTimeError # co19-ro
 WebPlatformTest/dom/nodes/Element-childElementCount-nochild_t01: CompileTimeError # co19-roll r722: Please triage this failure.
 
 [ $compiler == dart2js && $checked ]
-Language/13_Statements/09_Switch_A05_t01: Fail # Missing type check in switch expression
-Language/13_Statements/09_Switch_A09_t01: RuntimeError # Issue 16089
+Language/Statements/Switch/execution_t01: Fail # Missing type check in switch expression
+Language/Statements/Switch/type_t01: RuntimeError # Issue 16089
 Language/Types/Static_Types/malformed_type_t01: RuntimeError # Issue 21089
 Language/Types/Dynamic_Type_System/malbounded_type_error_t01.dart: RuntimeError # Issue 21088
 Language/Types/Parameterized_Types/malbounded_t06: RuntimeError # Issue 21088
@@ -7561,7 +7561,7 @@ Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage th
 Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
 Language/Expressions/Conditional/type_t04: Skip # Times out. Please triage this failure
 Language/Expressions/Identifier_Reference/evaluation_function_t02: Skip # Times out. Please triage this failure
-Language/13_Statements/03_Variable_Declaration_A01_t18: Skip # Times out. Please triage this failure
+Language/Statements/Local_Variable_Declaration/syntax_t18: Skip # Times out. Please triage this failure
 Language/Types/Interface_Types/subtype_t37: Skip # Times out. Please triage this failure
 Language/Types/Function_Types/subtype_no_args_t03: Skip # Times out. Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure

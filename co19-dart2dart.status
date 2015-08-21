@@ -10,7 +10,7 @@ LibTest/core/List/List_class_A01_t02: Crash # issue 19953
 
 [ $compiler == dart2dart && $builder_tag != new_backend ]
 Language/Expressions/Assignment/setter_assignment_t09: RuntimeError # co19-roll r667: Please triage this failure
-Language/13_Statements/12_Labels_A01_t03: fail # co19-roll r546: Please triage this failure
+Language/Statements/Labels/sybtax_t03: fail # co19-roll r546: Please triage this failure
 
 [ $compiler == dart2dart ]
 Language/Overview/Scoping/hiding_declaration_t05: Fail # Inherited from dart2js
@@ -61,9 +61,9 @@ Language/Expressions/Top_level_Getter_Invocation/Getter_Invocation_A07_t02: Pass
 Language/Expressions/Equality/syntax_t01: fail # co19-roll r546: Please triage this failure
 Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # co19-roll r546: Please triage this failure
 Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # co19-roll r546: Please triage this failure
-Language/13_Statements/04_Local_Function_Declaration_A04_t01: Fail, MissingCompileTimeError # co19-roll r607: Please triage this failure
-Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # co19-roll r667: Please triage this failure
-Language/13_Statements/09_Switch_A01_t02: fail # co19-roll r546: Please triage this failure
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t01: Fail, MissingCompileTimeError # co19-roll r607: Please triage this failure
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t03: MissingCompileTimeError # co19-roll r667: Please triage this failure
+Language/Statements/Switch/syntax_t02: fail # co19-roll r546: Please triage this failure
 Language/14_Libraries_and_Scripts/1_Imports_A03_t08: fail # co19-roll r546: Please triage this failure
 Language/14_Libraries_and_Scripts/1_Imports_A03_t09: fail # co19-roll r546: Please triage this failure
 Language/14_Libraries_and_Scripts/1_Imports_A03_t10: fail # co19-roll r546: Please triage this failure

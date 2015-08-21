@@ -72,10 +72,10 @@ LibTest/collection/Queue/Queue_class_A01_t01: Fail, OK
 
 Language/Expressions/Method_Invocation/Cascaded_Invocations/syntax_t19: MissingStaticWarning
 Language/Expressions/Assignable_Expressions/syntax_t09: MissingStaticWarning
-Language/13_Statements/06_For/1_For_Loop_A01_t07: MissingStaticWarning
-Language/13_Statements/06_For/1_For_Loop_A01_t08: MissingStaticWarning
-Language/13_Statements/09_Switch_A10_t03: MissingStaticWarning
-Language/13_Statements/15_Assert_A04_t04: MissingStaticWarning
+Language/Statements/For/For_Loop/execution_t07: MissingStaticWarning
+Language/Statements/For/For_Loop/execution_t08: MissingStaticWarning
+Language/Statements/Switch/last_statement_t03: MissingStaticWarning
+Language/Statements/Assert/type_t04: MissingStaticWarning
 
 Language/Variables/final_t04: MissingCompileTimeError # co19-roll r651: Please triage this failure
 Language/Variables/final_t05: MissingCompileTimeError # co19-roll r651: Please triage this failure

@@ -229,7 +229,7 @@ LibTest/isolate/SendPort/send_A01_t01: RuntimeError # co19-roll r706.  Please tr
 LibTest/isolate/SendPort/send_A01_t02: RuntimeError # co19-roll r706.  Please triage this failure.
 LibTest/isolate/SendPort/send_A01_t03: RuntimeError # co19-roll r706.  Please triage this failure.
 LibTest/isolate/SendPort/send_A01_t04: RuntimeError # co19-roll r706.  Please triage this failure.
-Language/12_Expressions/13_Spawning_an_Isolate_A01_t01: RuntimeError # co19-roll r667: Please triage this failure
+Language/Expressions/Spawning_an_Isolate/new_isolate_t01: RuntimeError # co19-roll r667: Please triage this failure
 LibTest/isolate/Isolate/spawn_A01_t01: RuntimeError # co19-roll r667: Please triage this failure
 LibTest/isolate/Isolate/spawn_A01_t02: RuntimeError # co19-roll r667: Please triage this failure
 LibTest/isolate/Isolate/spawn_A01_t03: RuntimeError # co19-roll r667: Please triage this failure
