@@ -64,12 +64,10 @@ Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # co19-roll r546: 
 Language/13_Statements/04_Local_Function_Declaration_A04_t01: Fail, MissingCompileTimeError # co19-roll r607: Please triage this failure
 Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # co19-roll r667: Please triage this failure
 Language/13_Statements/09_Switch_A01_t02: fail # co19-roll r546: Please triage this failure
-Language/14_Libraries_and_Scripts/1_Imports_A03_t08: fail # co19-roll r546: Please triage this failure
-Language/14_Libraries_and_Scripts/1_Imports_A03_t09: fail # co19-roll r546: Please triage this failure
-Language/14_Libraries_and_Scripts/1_Imports_A03_t10: fail # co19-roll r546: Please triage this failure
-Language/14_Libraries_and_Scripts/1_Imports_A03_t28: fail # co19-roll r546: Please triage this failure
-Language/14_Libraries_and_Scripts/1_Imports_A03_t29: fail # co19-roll r546: Please triage this failure
-Language/14_Libraries_and_Scripts/1_Imports_A03_t30: fail # co19-roll r546: Please triage this failure
+Language/Libraries_and_Scripts/Imports/same_name_t08: fail # co19-roll r546: Please triage this failure
+Language/Libraries_and_Scripts/Imports/same_name_t09: fail # co19-roll r546: Please triage this failure
+Language/Libraries_and_Scripts/Imports/same_name_t10: fail # co19-roll r546: Please triage this failure
+Language/Libraries_and_Scripts/Imports/same_name_t18: fail # co19-roll r546: Please triage this failure
 Language/Types/Interface_Types/subtype_t27: crash # co19-roll r546: Please triage this failure
 Language/Types/Interface_Types/subtype_t28: crash # co19-roll r546: Please triage this failure
 Language/Types/Interface_Types/subtype_t30: fail # Issue 14654

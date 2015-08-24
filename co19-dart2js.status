@@ -49,12 +49,10 @@ Language/12_Expressions/22_Equality_A05_t01: fail # Issue 21137
 Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # Issue 21154
 Language/13_Statements/04_Local_Function_Declaration_A04_t01: MissingCompileTimeError # Issue 21050
 Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # Issue 21050
-Language/14_Libraries_and_Scripts/1_Imports_A03_t08: fail # Issue 21171
-Language/14_Libraries_and_Scripts/1_Imports_A03_t09: fail # Issue 21171
-Language/14_Libraries_and_Scripts/1_Imports_A03_t10: fail # Issue 21171
-Language/14_Libraries_and_Scripts/1_Imports_A03_t28: fail # Issue 21171
-Language/14_Libraries_and_Scripts/1_Imports_A03_t29: fail # co19 issue 723
-Language/14_Libraries_and_Scripts/1_Imports_A03_t30: fail # co19 issue 723
+Language/Libraries_and_Scripts/Imports/same_name_t08: fail # Issue 21171
+Language/Libraries_and_Scripts/Imports/same_name_t09: fail # Issue 21171
+Language/Libraries_and_Scripts/Imports/same_name_t10: fail # Issue 21171
+Language/Libraries_and_Scripts/Imports/same_name_t18: fail # Issue 21171
 Language/Types/Interface_Types/subtype_t27: crash # Issue 21174
 Language/Types/Interface_Types/subtype_t28: crash # Issue 21174
 Language/Types/Interface_Types/subtype_t30: fail # Issue 14654

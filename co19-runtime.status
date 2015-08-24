@@ -14,8 +14,8 @@ LibTest/core/int/toRadixString_A01_t01: Fail # co19 issue 492
 Language/Overview/Scoping/hiding_declaration_t28: RuntimeError # Issue 21163
 Language/13_Statements/09_Switch_A01_t02: fail # Dart issue 12908
 Language/13_Statements/12_Labels_A01_t03: fail # Dart issue 2238
-Language/14_Libraries_and_Scripts/2_Exports_A04_t02: fail # Dart issue 12916
-Language/14_Libraries_and_Scripts/2_Exports_A04_t03: fail # Dart issue 12916
+Language/Libraries_and_Scripts/Exports/reexport_t01: fail # Dart issue 12916
+Language/Libraries_and_Scripts/Exports/reexport_t02: fail # Dart issue 12916
 
 Language/13_Statements/15_Assert_A03_t02: skip # co19 issue 734
 Language/13_Statements/15_Assert_A03_t03: skip # co19 issue 734
@@ -44,9 +44,9 @@ LibTest/typed_data/Float32x4/reciprocal_A01_t01: Pass, Fail # co19 issue 599
 Language/12_Expressions/12_Instance_Creation/2_Const_A11_t01: MissingCompileTimeError # Issue 22007
 Language/12_Expressions/12_Instance_Creation/2_Const_A11_t03: MissingCompileTimeError # Issue 22007
 # With asynchronous loading, the load errors in these tests are no longer recognized as compile errors:
-Language/14_Libraries_and_Scripts/1_Imports_A04_t02: Fail
-Language/14_Libraries_and_Scripts/2_Exports_A05_t02: Fail
-Language/14_Libraries_and_Scripts/3_Parts_A01_t06: Fail
+Language/Libraries_and_Scripts/Imports/invalid_uri_t02: Fail
+Language/Libraries_and_Scripts/Exports/invalid_uri_t02: Fail
+Language/Libraries_and_Scripts/Parts/syntax_t06: Fail
 
 [ $runtime == vm ]
 # These flaky tests also fail with dart2dart.
