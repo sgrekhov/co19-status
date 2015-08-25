@@ -1,16 +1,16 @@
-# Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+invocation# Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 # for details. All rights reserved. Use of this source code is governed by a
 # BSD-style license that can be found in the LICENSE file.
 
 [ $compiler == dart2dart && $builder_tag == new_backend ]
-Language/12_Expressions/18_Assignment_A04_t09: RuntimeError # Issue 23015
+Language/Expressions/Assignment/setter_assignment_t09: RuntimeError # Issue 23015
 LibTest/collection/ListBase/ListBase_class_A01_t02: Crash # issue 19953
 LibTest/collection/ListMixin/ListMixin_class_A01_t02: Crash # issue 19953
 LibTest/core/List/List_class_A01_t02: Crash # issue 19953
 
 [ $compiler == dart2dart && $builder_tag != new_backend ]
-Language/12_Expressions/18_Assignment_A04_t09: RuntimeError # co19-roll r667: Please triage this failure
-Language/13_Statements/12_Labels_A01_t03: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Assignment/setter_assignment_t09: RuntimeError # co19-roll r667: Please triage this failure
+Language/Statements/Labels/sybtax_t03: fail # co19-roll r546: Please triage this failure
 
 [ $compiler == dart2dart ]
 Language/Overview/Scoping/hiding_declaration_t05: Fail # Inherited from dart2js
@@ -39,31 +39,31 @@ Language/Classes/Constructors/Factories/accessible_class_t03: fail # Issue 21202
 Language/Classes/Constructors/implicit_constructor_t03: Fail # Calling unresolved class constructor.
 Language/Classes/Superclasses/Inheritance_and_Overriding/inheritance_t03: Fail # TODO(dart2dart-team): Please triage this failure.
 Language/Generics/syntax_t17: fail # Issue 21203
-Language/12_Expressions/01_Constants_A03_t01: Fail # Issue 13652
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t03: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t05: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t06: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t07: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A03_t01: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A03_t02: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A04_t01: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A04_t02: RuntimeError # co19-roll r607: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A06_t04: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A06_t05: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A06_t06: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/12_Instance_Creation/1_New_A06_t15: CompileTimeError # Issue 21092
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t01: MissingCompileTimeError # Issue 21134
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t03: MissingCompileTimeError # Issue 21134
-Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t17: MissingCompileTimeError # Issue 21210
-Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t18: MissingCompileTimeError # Issue 21210
+Language/Expressions/Constants/literal_string_t01: Fail # Issue 13652
+Language/Expressions/Instance_Creation/New/type_t03: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/type_t05: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/type_t06: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/type_t07: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/named_constructor_t01: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/named_constructor_t02: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/constructor_same_name_as_class_t01: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/constructor_same_name_as_class_t02: RuntimeError # co19-roll r607: Please triage this failure
+Language/Expressions/Instance_Creation/New/evaluation_t04: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/evaluation_t05: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/evaluation_t06: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Instance_Creation/New/evaluation_t15: CompileTimeError # Issue 21092
+Language/Expressions/Instance_Creation/Const/abstract_class_t01: MissingCompileTimeError # Issue 21134
+Language/Expressions/Instance_Creation/Const/abstract_class_t03: MissingCompileTimeError # Issue 21134
+Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: MissingCompileTimeError # Issue 21210
+Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # Issue 21210
 Language/12_Expressions/15_Method_Invocation/3_Static_Invocation_A04_t09: RuntimeError # co19-roll r623: Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
-Language/12_Expressions/22_Equality_A01_t01: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/22_Equality_A05_t01: fail # co19-roll r546: Please triage this failure
-Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # co19-roll r546: Please triage this failure
-Language/13_Statements/04_Local_Function_Declaration_A04_t01: Fail, MissingCompileTimeError # co19-roll r607: Please triage this failure
-Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # co19-roll r667: Please triage this failure
-Language/13_Statements/09_Switch_A01_t02: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
+Language/Expressions/Equality/syntax_t01: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # co19-roll r546: Please triage this failure
+Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # co19-roll r546: Please triage this failure
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t01: Fail, MissingCompileTimeError # co19-roll r607: Please triage this failure
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t03: MissingCompileTimeError # co19-roll r667: Please triage this failure
+Language/Statements/Switch/syntax_t02: fail # co19-roll r546: Please triage this failure
 Language/Libraries_and_Scripts/Imports/same_name_t08: fail # co19-roll r546: Please triage this failure
 Language/Libraries_and_Scripts/Imports/same_name_t09: fail # co19-roll r546: Please triage this failure
 Language/Libraries_and_Scripts/Imports/same_name_t10: fail # co19-roll r546: Please triage this failure
@@ -119,8 +119,8 @@ LibTest/math/asin_A01_t01: Fail, OK # co19 issue 44
 LibTest/math/atan_A01_t01: Fail, OK # co19 issue 44
 
 [ $compiler == dart2dart && $minified ]
-Language/12_Expressions/14_Function_Invocation/4_Function_Expression_Invocation_A01_t02: fail # co19-roll r559: Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A02_t01: fail # co19-roll r559: Please triage this failure
-Language/12_Expressions/18_Assignment_A05_t02: fail # co19-roll r559: Please triage this failure
-Language/12_Expressions/18_Assignment_A05_t04: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Function_Invocation/Function_Expression_Invocation/property_extraction_t02: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A02_t01: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Assignment/expression_assignment_t02: fail # co19-roll r559: Please triage this failure
+Language/Expressions/Assignment/expression_assignment_t04: fail # co19-roll r559: Please triage this failure
 LibTest/convert/JsonCodec/encode_A01_t02: RuntimeError # co19-roll r641: Please triage this failure

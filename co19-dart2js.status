@@ -29,26 +29,26 @@ Language/Classes/Constructors/Factories/redirecting_constructor_call_t02: fail #
 Language/Classes/Constructors/Factories/accessible_class_t02: fail # Issue 21202
 Language/Classes/Constructors/Factories/accessible_class_t03: fail # Issue 21202
 Language/Generics/syntax_t17: fail # Issue 21203
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A02_t02: fail # Issue 11551, also related to issue 563, 18738
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A06_t01: fail # Issue 11551, also related to issue 563, 18738
-Language/12_Expressions/01_Constants_A03_t01: CompileTimeError # Issue 13652
-Language/12_Expressions/03_Numbers_A01_t06: fail # Issue 21098
-Language/12_Expressions/03_Numbers_A01_t09: fail # Issue 21098
-Language/12_Expressions/07_Maps_A11_t01: CompileTimeError # Maybe ok. Issue 17207
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t03: fail # Issue 21092 and co19 issue 713
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t05: fail # Issue 21092 and co19 issue 713
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t06: fail # Issue 21092 and co19 issue 713
-Language/12_Expressions/12_Instance_Creation/1_New_A02_t07: fail # Issue 21092 and co19 issue 713
-Language/12_Expressions/12_Instance_Creation/1_New_A06_t15: CompileTimeError # Issue 21092
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t01: fail # Issue 21134 and co19 issue 714
-Language/12_Expressions/12_Instance_Creation/2_Const_A11_t03: fail # Issue 21134 and co19 issue 714
-Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t17: MissingCompileTimeError # Issue 21210
-Language/12_Expressions/14_Function_Invocation/3_Unqualified_Invocation_A01_t18: MissingCompileTimeError # Issue 21210
-Language/12_Expressions/22_Equality_A01_t01: fail # Issue 21137
-Language/12_Expressions/22_Equality_A05_t01: fail # Issue 21137
-Language/12_Expressions/30_Identifier_Reference_A02_t01: fail # Issue 21154
-Language/13_Statements/04_Local_Function_Declaration_A04_t01: MissingCompileTimeError # Issue 21050
-Language/13_Statements/04_Local_Function_Declaration_A04_t03: MissingCompileTimeError # Issue 21050
+Language/Expressions/Object_Identity/Object_Identity/double_t02: fail # Issue 11551, also related to issue 563, 18738
+Language/Expressions/Object_Identity/Object_Identity/constant_objects_t01: fail # Issue 11551, also related to issue 563, 18738
+Language/Expressions/Constants/literal_string_t01: CompileTimeError # Issue 13652
+Language/Expressions/Numbers/syntax_t06: fail # Issue 21098
+Language/Expressions/Numbers/syntax_t09: fail # Issue 21098
+Language/Expressions/Maps/static_type_dynamic_t01: CompileTimeError # Maybe ok. Issue 17207
+Language/Expressions/Instance_Creation/New/type_t03: fail # Issue 21092 and co19 issue 713
+Language/Expressions/Instance_Creation/New/type_t05: fail # Issue 21092 and co19 issue 713
+Language/Expressions/Instance_Creation/New/type_t06: fail # Issue 21092 and co19 issue 713
+Language/Expressions/Instance_Creation/New/type_t07: fail # Issue 21092 and co19 issue 713
+Language/Expressions/Instance_Creation/New/evaluation_t15: CompileTimeError # Issue 21092
+Language/Expressions/Instance_Creation/Const/abstract_class_t01: fail # Issue 21134 and co19 issue 714
+Language/Expressions/Instance_Creation/Const/abstract_class_t03: fail # Issue 21134 and co19 issue 714
+Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: MissingCompileTimeError # Issue 21210
+Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # Issue 21210
+Language/Expressions/Equality/syntax_t01: fail # Issue 21137
+Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # Issue 21137
+Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # Issue 21154
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t01: MissingCompileTimeError # Issue 21050
+Language/Statements/Local_Function_Declaration/reference_before_declaration_t03: MissingCompileTimeError # Issue 21050
 Language/Libraries_and_Scripts/Imports/same_name_t08: fail # Issue 21171
 Language/Libraries_and_Scripts/Imports/same_name_t09: fail # Issue 21171
 Language/Libraries_and_Scripts/Imports/same_name_t10: fail # Issue 21171
@@ -250,8 +250,8 @@ WebPlatformTest/dom/nodes/Document-createElement_t01: CompileTimeError # co19-ro
 WebPlatformTest/dom/nodes/Element-childElementCount-nochild_t01: CompileTimeError # co19-roll r722: Please triage this failure.
 
 [ $compiler == dart2js && $checked ]
-Language/13_Statements/09_Switch_A05_t01: Fail # Missing type check in switch expression
-Language/13_Statements/09_Switch_A09_t01: RuntimeError # Issue 16089
+Language/Statements/Switch/execution_t01: Fail # Missing type check in switch expression
+Language/Statements/Switch/type_t01: RuntimeError # Issue 16089
 Language/Types/Static_Types/malformed_type_t01: RuntimeError # Issue 21089
 Language/Types/Dynamic_Type_System/malbounded_type_error_t01.dart: RuntimeError # Issue 21088
 Language/Types/Parameterized_Types/malbounded_t06: RuntimeError # Issue 21088
@@ -277,8 +277,8 @@ LibTest/collection/ListMixin/ListMixin_class_A01_t01: Pass, Timeout
 LibTest/core/List/List_class_A01_t01: Pass, Timeout
 
 [ $compiler == dart2js && $runtime == jsshell ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Issue 21198 (int/double related)
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Issue 21199
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Issue 21198 (int/double related)
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Issue 21199
 LibTest/async/Future/Future.delayed_A01_t01: RuntimeError # Issue 7728, timer not supported in jsshell
 LibTest/async/Future/Future.delayed_A03_t01: fail # Issue 7728, timer not supported in jsshell
 LibTest/async/Future/wait_A01_t07: RuntimeError # Issue 7728, timer not supported in jsshell
@@ -362,8 +362,8 @@ LibTest/core/int/toRadixString_A01_t01: RuntimeError, OK # Bad test: uses Expect
 [ $compiler == dart2js && $runtime == d8 ]
 LibTest/math/sin_A01_t02: RuntimeError # V8 issue 3006, https://code.google.com/p/v8/issues/detail?id=3006
 LibTest/typed_data/Float32x4List/Float32x4List.view_A06_t01: fail # co19-roll r587: Please triage this failure
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Issue 21198 (int/double related)
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Issue 21199
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Issue 21198 (int/double related)
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Issue 21199
 LibTest/typed_data/Int32x4/operator_OR_A01_t01: RuntimeError # Issue 7728, timer not supported in jsshell
 
 [ $compiler == dart2js && $runtime == d8 && $system == windows ]
@@ -394,10 +394,10 @@ LayoutTests/fast/forms/submit-nil-value-field-assert_t01: Skip # Test reloads it
 LayoutTests/fast/forms/textarea-submit-crash_t01: Skip # Test reloads itself. Issue 18558.
 
 [ $compiler == dart2js && $runtime == chromeOnAndroid ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure.
-Language/12_Expressions/05_Strings_A06_t01: Pass, Slow # Please triage this failure.
-Language/12_Expressions/05_Strings_A06_t01: Pass, Slow # Please triage this failure.
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure.
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure.
+Language/Expressions/Strings/escape_backspace_t01: Pass, Slow # Please triage this failure.
+Language/Expressions/Strings/escape_backspace_t01: Pass, Slow # Please triage this failure.
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure.
 LibTest/core/RegExp/Pattern_semantics/firstMatch_NonEmptyClassRanges_A01_t01: Fail # Issue 22200.
 LibTest/core/RegExp/Pattern_semantics/firstMatch_NonEmptyClassRanges_A01_t05: Fail # Issue 22200.
 LibTest/core/RegExp/Pattern_semantics/firstMatch_NonEmptyClassRanges_A01_t06: Fail # Issue 22200.
@@ -426,8 +426,8 @@ LibTest/typed_data/Int8List/sublist_A02_t01: Pass, Slow # Please triage this fai
 LibTest/typed_data/Uint8ClampedList/map_A02_t01: Pass, Slow # Please triage this failure.
 
 [ $compiler == dart2js && $runtime == chrome ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-self_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-justify-self_t01: RuntimeError # Please triage this failure
@@ -1391,9 +1391,9 @@ LayoutTests/fast/text/regional-indicator-symobls_t01: RuntimeError # Please tria
 LayoutTests/fast/text/text-combine-shrink-to-fit_t01: RuntimeError # Please triage this failure
 
 [ $compiler == dart2js && $runtime == ff ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/28_Postfix_Expressions_A07_t02: Skip # Times out. Please triage this failure
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
+Language/Expressions/Postfix_Expressions/property_decrement_t02: Skip # Times out. Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-self_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-justify-self_t01: RuntimeError # Please triage this failure
@@ -2933,8 +2933,8 @@ LayoutTests/fast/dom/MutationObserver/observe-options-attributes_t01: RuntimeErr
 LayoutTests/fast/dom/MutationObserver/observe-options-character-data_t01: RuntimeError # Please triage this failure
 
 [ $compiler == dart2js && $runtime == safari ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-self_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-justify-self_t01: RuntimeError # Please triage this failure
@@ -4191,8 +4191,8 @@ WebPlatformTest/webstorage/storage_session_setitem_quotaexceedederr_t01: Skip # 
 WebPlatformTest/webstorage/storage_session_setitem_t01: Skip # Times out. Please triage this failure
 
 [ $compiler == dart2js && $runtime == safarimobilesim ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-self_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-justify-self_t01: RuntimeError # Please triage this failure
@@ -5519,9 +5519,9 @@ WebPlatformTest/webstorage/storage_session_setitem_t01: RuntimeError # Please tr
 LayoutTests/fast/table/hittest-tablecell-with-borders-bottom-edge_t01: RuntimeError, Pass # Issue 22752. Please triage this failure.
 
 [ $compiler == dart2js && $runtime == ie10 ]
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A03_t02: Skip # Times out. Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A03_t02: Skip # Times out. Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-align-self_t01: RuntimeError # Please triage this failure
 LayoutTests/fast/alignment/parse-justify-self_t01: RuntimeError # Please triage this failure
@@ -7555,11 +7555,11 @@ WebPlatformTest/webstorage/storage_session_setitem_t01: RuntimeError # Please tr
 [ $compiler == dart2js && $runtime == ie11 ]
 Language/Variables/implicit_setter_void_t07: Skip # Times out. Please triage this failure
 Language/Functions/Formal_Parameters/scope_t01: Skip # Times out. Please triage this failure
-Language/12_Expressions/00_Object_Identity/1_Object_Identity_A05_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
-Language/12_Expressions/19_Conditional_A06_t04: Skip # Times out. Please triage this failure
-Language/12_Expressions/30_Identifier_Reference_A10_t02: Skip # Times out. Please triage this failure
-Language/13_Statements/03_Variable_Declaration_A01_t18: Skip # Times out. Please triage this failure
+Language/Expressions/Object_Identity/object_t02: RuntimeError # Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: RuntimeError # Please triage this failure
+Language/Expressions/Conditional/type_t04: Skip # Times out. Please triage this failure
+Language/Expressions/Identifier_Reference/evaluation_function_t02: Skip # Times out. Please triage this failure
+Language/Statements/Local_Variable_Declaration/syntax_t18: Skip # Times out. Please triage this failure
 Language/Types/Interface_Types/subtype_t37: Skip # Times out. Please triage this failure
 Language/Types/Function_Types/subtype_no_args_t03: Skip # Times out. Please triage this failure
 LayoutTests/fast/alignment/parse-align-items_t01: RuntimeError # Please triage this failure
