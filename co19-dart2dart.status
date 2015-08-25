@@ -56,8 +56,8 @@ Language/Expressions/Instance_Creation/Const/abstract_class_t01: MissingCompileT
 Language/Expressions/Instance_Creation/Const/abstract_class_t03: MissingCompileTimeError # Issue 21134
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t17: MissingCompileTimeError # Issue 21210
 Language/Expressions/Function_Invocation/Unqualified_Invocation/invocation_t18: MissingCompileTimeError # Issue 21210
-Language/12_Expressions/15_Method_Invocation/3_Static_Invocation_A04_t09: RuntimeError # co19-roll r623: Please triage this failure
-Language/Expressions/Top_level_Getter_Invocation/Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
+Language/Expressions/Method_Invocation/3_Static_Invocation_A04_t09: RuntimeError # co19-roll r623: Please triage this failure
+Language/Expressions/Top_level_Getter_Invocation/17_Getter_Invocation_A07_t02: Pass, RuntimeError # co19-roll r607: Please triage this failure
 Language/Expressions/Equality/syntax_t01: fail # co19-roll r546: Please triage this failure
 Language/Expressions/Equality/not_equal_equivalent_super_t01: fail # co19-roll r546: Please triage this failure
 Language/Expressions/Identifier_Reference/syntax_built_in_t01: fail # co19-roll r546: Please triage this failure
